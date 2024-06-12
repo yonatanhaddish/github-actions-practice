@@ -23,7 +23,9 @@ jobs:
       - name: Second Command [User]
         run: echo ${{github.actor}}
       - name: Third Command
-        run: echo ${{github}}
+        run: echo ${{github.repository}}
+      - name: Fourth Command
+        run: echo ${{github.token}}
         
 
       
