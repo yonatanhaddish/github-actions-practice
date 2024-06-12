@@ -13,7 +13,15 @@ jobs:
         with:
           node-version: "20"
       - run: npm install -g bats
-      - run: npm install -g axios
       - run: bats -v
       - run: node -v
-      - run: axios -v
+  print-names-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Command
+        uses: actions/checkout@v4
+      - name: Second Command [print001]
+        run: ${github}
+        
+
+      
