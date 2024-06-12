@@ -20,8 +20,10 @@ jobs:
     steps:
       - name: First Command
         uses: actions/checkout@v4
-      - name: Second Command [print001]
-        run: echo ${{github.ref}}
+      - name: Second Command [User]
+        run: echo ${{github.actor}}
+      - name: Third Command
+        run: echo ${{github}}
         
 
       
