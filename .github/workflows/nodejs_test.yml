@@ -15,4 +15,4 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
       - run: node -v
-      - run: npm -v
+      - run: axios -v
