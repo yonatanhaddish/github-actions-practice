@@ -26,10 +26,10 @@ jobs:
         run: echo ${{github.repository}}
       - name: Fourth Command
         if: ${{github.ref}} == 'refs/heads/main'
-        run: echo Equal
+        run: echo "Equal"
       - name: Fifith Command
         if: ${{github.ref}} != 'refs/heads/main'
-        run: echo NOT Equal
+        run: echo "NOT Equal"
         
 
       
